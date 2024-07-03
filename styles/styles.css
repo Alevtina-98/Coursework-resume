@@ -1,0 +1,266 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: auto 0;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(89, 89, 89);
+}
+.container {
+  max-width: 1200px;
+  background: rgb(255, 255, 255);
+  box-shadow: 6px 6px 20px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  border: 40px solid rgb(245, 247, 250);
+  margin: 0 auto;
+}
+/* start left-section */
+.left-section {
+  background: rgb(30, 41, 57);
+  width: 370px;
+  text-align: left;
+}
+.main-foto {
+  width: 370px;
+  height: 354px;
+  position: relative;
+  top: 40px;
+  right: 40px;
+}
+.nav {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-top: 51px;
+  gap: 10px;
+}
+.contacts {
+  margin: 5px;
+}
+ul.contacts-lists {
+  list-style: none;
+}
+.contacts-item span {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+.pnone a {
+  text-decoration: none;
+}
+.contacts-item a {
+  color: rgb(89, 89, 89);
+  padding: 10px;
+}
+.contacts-item a:hover {
+  color: rgb(0, 0, 0);
+}
+.left-section-h3 {
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 27px;
+  text-transform: capitalize;
+  text-align: left;
+}
+.tech-skills,
+.soft-skills {
+  text-align: left;
+  margin: 0 20px 20px 41px;
+  padding-left: 3px;
+}
+.skills-lists {
+  padding-left: 20px;
+}
+.skills-lists li::marker {
+  color: rgb(251, 109, 58);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+}
+.skills-item {
+  color: rgb(255, 255, 255);
+}
+/* end left-section */
+
+/* start right-section */
+.right-section {
+  display: flex;
+  max-width: 830px;
+  margin: 50px 50px 40px 40px;
+  flex-direction: column;
+}
+.main-info {
+  padding: 20px;
+}
+.less-part-work {
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  padding-left: 20px;
+}
+.main-h {
+  color: rgb(0, 0, 0);
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 55px;
+  margin: 10px;
+}
+.text-about-Sergii {
+  text-align: left;
+  padding: 10px 15px 10px;
+}
+
+.parts-right-section {
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 27px;
+}
+
+.project-list {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
+/* nav-project*/
+.nav-project {
+  text-align: left;
+  max-width: 485px;
+  padding: 5px;
+}
+.nav-lists {
+  display: flex;
+  flex-direction: column;
+}
+.nav-lists li::marker {
+  color: rgb(0, 0, 0);
+}
+.project-item {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  color: rgb(89, 89, 89);
+}
+
+.nav-lists a {
+  text-decoration: none;
+  color: rgb(89, 89, 89);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.nav-lists a:hover {
+  color: rgb(0, 0, 0);
+}
+/* work */
+
+.work {
+  max-width: 485px;
+  padding: 5px;
+}
+.parts-right-section {
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 27px;
+  padding-left: 17px;
+}
+.less-part-work span {
+  color: rgb(251, 109, 58);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+}
+.data {
+  color: rgb(168, 168, 168);
+  margin-left: 20px;
+}
+.data .country::before {
+  content: " ";
+  border-right: 1px solid rgb(0, 0, 0);
+  margin: 0 5px;
+}
+.work-lists .work-item {
+  padding-left: 7px;
+}
+/* education */
+.education {
+  margin-bottom: 40px;
+}
+.university {
+  color: rgb(251, 109, 58);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  padding-left: 18px;
+}
+.specialty {
+  text-transform: capitalize;
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  padding-left: 18px;
+}
+/* end right-section */
+
+@media screen and(max-width:1199px) {
+  .container {
+    width: 720px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .container {
+    width: 320px;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    box-shadow: none;
+  }
+  .left-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 320px;
+  }
+
+  .contacts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .main-foto {
+    max-width: 240px;
+    position: relative;
+    right: 0;
+    height: auto;
+  }
+  .right-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 320px;
+    background-color: rgb(255, 255, 255);
+  }
+  .main-info,
+  .nav-project,
+  .work,
+  .work-kopyta-lcc,
+  .work-kopyta-new,
+  .education {
+    max-width: 300px;
+    text-align: center;
+  }
+}
